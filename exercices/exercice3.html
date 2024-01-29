@@ -1,7 +1,60 @@
-Exercice 3
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Exercice 3</title>
 
-Consignes :
+        <!--CSS-->
+        <link href="globals.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Exercice 3</h1>
+        <h2>Consignes</h2>
+        <ol>
+            <li>
+                Mettre en forme l'exercice 3
+            </li>
+            <li>
+                Recopier le formulaire d'inscription précédent ci-dessous
+            </li>
+            <li>
+                Grâce au fichier globals.css, mettre le texte des labels en bleu, 
+                agrandir la police dans les input texte, placer un bloc en position
+                absolue à droite du champ adresse email avec un texte de votre 
+                choix en police 10px rouge.
+            </li>
+        </ol>
+        <h2>Réponse : on a le form modifié par css</h2>
+        <form>
+            <div>
+                <label for="firstname">Prénom</label>
+                <input type="text" id="firstname" name="firstname"/>
 
-- Mettre en forme l'exercice 3
-- Recopier le formulaire d'inscription précédent ci-dessous
-- Grâce au fichier globals.css, mettre le texte des labels en bleu, agrandir la police dans les input texte, placer un bloc en position absolue à droite du champ adresse email avec un texte de votre choix en police 10px rouge.
+                <label for="lastname">Nom de famille</label>
+                <input type="text" id="lastname" name="lastname"/>
+            </div>
+            <div id="champ_email">
+                <label for="email">Votre Email</label>
+                <input type="email" id="email" name="email"/>
+
+                <div class ="bloc-rouge">
+                    <p>Ceci est un bloc en position
+                        absolue à droite du champ adresse email avec un texte de votre 
+                        choix en police 10px rouge. </p>
+                </div>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password"/>
+            </div>
+            <div>
+                <label for="checkbox">CGU</label>
+                <input type="checkbox" id="checkbox" name="checkbox"/>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+
+    </body>
+</html>

@@ -1,7 +1,108 @@
-Exercice 4
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Exercice 4</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="variables.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Exercice 4</h1>
+            <h2>Consignes</h2>
+            <ol>
+                <li>
+                    Recopier les exercices 1 et 2 ci-dessous
+                </li>
+                <li>
+                    Les adapter pour que les 2 exercices soient sur 2 colonnes 
+                    différentes sur Desktop, et sur une seule colonne sur Mobile
+                </li>
+                <li>
+                    Adapter le formulaire pour qu'il respecte les guidelines Bootstrap
+                    sur les formulaires
+                </li>
+            </ol>
+            <h2>Réponses</h2>
 
-Consignes :
-
-- Recopier les exercices 1 et 2 ci-dessous
-- Les adapter pour que les 2 exercices soient sur 2 colonnes différentes sur Desktop, et sur une seule colonne sur Mobile
-- Adapter le formulaire pour qu'il respecte les guidelines Bootstrap sur les formulaires
+            <div class="row">
+                <div class="col-md">
+                    <table class="table">
+                        <tr>
+                            <th>Balise</th>
+                            <th>Contenu</th>
+                            <th>Détails</th>
+                        </tr>
+                        <tr>
+                            <td>html</td>
+                            <td>head,body</td>
+                            <td>Tout, préciser la langue de la page</td>
+                        </tr>
+                        <tr>
+                            <td>&lt;head&gt;</td>
+                            <td>meta, title</td>
+                            <td>Le charset utilisé, nom de la page affiché,etc.</td>
+                        </tr>
+                        <tr>
+                            <td>body</td>
+                            <td>h1,h2,p,table,div,span,etc.</td>
+                            <td>le contenu de la page</td>
+                        </tr>
+                        <tr>
+                            <td>h1, h2, etc.</td>
+                            <td>text</td>
+                            <td>La mise en forme du titre 1,2..</td>
+                        </tr>
+                        <tr>
+                            <td>p</td>
+                            <td>text</td>
+                            <td>tout ce qui est affiché normalement</td>
+                        </tr>
+                        <tr>
+                            <td>table</td>
+                            <td>tr, td, th</td>
+                            <td>un tableau</td>
+                        </tr>
+                        <tr>
+                            <td>ul</td>
+                            <td>li</td>
+                            <td>une liste non numérotée</td>
+                        </tr>
+                        <tr>
+                            <td>ol</td>
+                            <td>li</td>
+                            <td>une liste numérotée</td>
+                        </tr>
+            
+                    </table>
+                </div>
+                <div class="col-md">
+                    <form>
+                        <div class="mb-3">
+                            <label for="firstname" class="form-label">Prénom</label>
+                            <input type="text" id="firstname" name="firstname" class="form-control" placeholder="Prénom"/>
+            
+                            <label for="lastname" class="form-label">Nom de famille</label>
+                            <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Nom"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Votre Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com"/>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Mot de passe</label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="****"/>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" id="checkbox" name="checkbox" class="form-check-input"/>
+                            <label for="checkbox" class="form-check-label">CGU</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
