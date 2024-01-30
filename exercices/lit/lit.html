@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pinger</title>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "lit-html": "https://cdn.jsdelivr.net/gh/lit/dist@3/core/lit-core.min.js",
+                    "distancetonow": "https://unpkg.com/date-fns/formatDistanceToNow.mjs"
+                }
+            }
+        </script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="variables.css"/>
+        <!--CSS-->
+        <link href="globals.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+          <template id="ping-temp">
+            
+          </template>
+            <div class="Timeline">
+                <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Pinger</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Profil</a>
+                          </li>
+                          <li class="nav-item">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                              </form>
+                          </li>
+                        </ul>
+                        <a class="nav-link" href="#">Déconnexion</a>
+                      </div>
+                    </div>
+                  </nav>
+
+                <form id = "add-ping-form" class="mb-3 mt-3 ml-3">
+                   <div class="mb-3">
+                        <label class="form-label" for="message">Comment allez-vous aujourd'hui</label>
+                        <input required maxlength="140" type="text" class="form-control" id="message" name="message" placeholder="votre message"/>
+                   </div>
+                   <button type="submit" class="btn btn-primary">Envoyer</button>
+                   <button type="reset" id="btn-supp" class="btn btn-danger">Supprimer</button>
+                </form>
+                <div id="pings">
+                  
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script type = "module" src="PingElementLit.js"></script>
+        <script type = "module" src="PingListe.js"></script>
+        <script src="scriptlit.js"></script>
+      </body>
+</html>
+
+
